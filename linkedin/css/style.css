@@ -276,19 +276,61 @@ body{
     height: auto;
     border-radius: 10px;
     position: relative;
-    border: 1px solid var(--borderColor);;
+    border: 1px solid var(--borderColor);
+    position: relative;
 }
-.container .content .row .content-lower .user-image-detail{
+.container .content .row .content-lower .user-content-detail span{
     display: flex;
 }
-.container .content .row .content-lower .user-image-detail .user{
+.container .content .row .content-lower .user-content-detail .user{
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.container .content .row .content-lower .user-image-detail span div{
-    font-size: 10px;
+.container .content .row .content-lower .user-content-detail span .name{
+    font-size: 11px;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.container .content .row .content-lower .user-content-detail span .content-icon{
+    color: #666;
+    padding: 10px;
+    height: 30px;
+    width: 40px;
+    border-radius: 20px;
+}
+.container .content .row .content-lower .user-content-detail span .content-icon:hover{
+    background-color:var(--bacgrondBody); 
+    cursor: pointer;
+}
+.container .content .row .content-lower .user-content-detail{
+    font-size: 12px;
+}
+.container .content .row .content-lower .user-content-detail .effect ul li{
+    display: inline-block;
+}
+.container .content .row .content-lower .user-content-detail .effect ul li:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: .5s;
+}
+.container .content .row .content-lower .user-content-detail .effect ul li:last-child{
+    float: right;
+}
+.container .content .row .content-lower .user-content-detail .state state-ul{
+    display: inline-block;
+    
 
+}
+.container .content .row .content-lower .user-content-detail .state .state-ul .state-li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container .content .row .content-lower .user-content-detail .state .state-ul .state-li:hover{
+    background-color: #EBEBEB;
+    cursor: pointer;
 }
 
 /* right aside*/
@@ -352,7 +394,7 @@ body{
 .container .right-aside .link-footer a{
     color: rgb(0, 0, 0,.5);
     font-size: 12px;
-    margin: 3px;
+    margin: 3px 10px 0px 0px;
 }
 .container .right-aside .link-footer a:hover{
     color: var(--primary);
